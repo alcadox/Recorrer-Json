@@ -41,13 +41,15 @@
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnAplicarCambios = new System.Windows.Forms.Button();
+            this.lblTituloCliente = new System.Windows.Forms.Label();
+            this.lblTituloPropiedades = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPropiedades)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBoxDni
             // 
             this.txtBoxDni.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxDni.Location = new System.Drawing.Point(53, 21);
+            this.txtBoxDni.Location = new System.Drawing.Point(63, 58);
             this.txtBoxDni.Name = "txtBoxDni";
             this.txtBoxDni.Size = new System.Drawing.Size(178, 23);
             this.txtBoxDni.TabIndex = 0;
@@ -56,7 +58,7 @@
             // 
             this.lblDni.AutoSize = true;
             this.lblDni.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDni.Location = new System.Drawing.Point(13, 23);
+            this.lblDni.Location = new System.Drawing.Point(23, 60);
             this.lblDni.Name = "lblDni";
             this.lblDni.Size = new System.Drawing.Size(34, 17);
             this.lblDni.TabIndex = 1;
@@ -66,7 +68,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(13, 64);
+            this.lblNombre.Location = new System.Drawing.Point(23, 101);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(60, 17);
             this.lblNombre.TabIndex = 3;
@@ -75,7 +77,7 @@
             // txtBoxNombre
             // 
             this.txtBoxNombre.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxNombre.Location = new System.Drawing.Point(79, 62);
+            this.txtBoxNombre.Location = new System.Drawing.Point(89, 99);
             this.txtBoxNombre.Name = "txtBoxNombre";
             this.txtBoxNombre.Size = new System.Drawing.Size(152, 23);
             this.txtBoxNombre.TabIndex = 2;
@@ -84,7 +86,7 @@
             // 
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono.Location = new System.Drawing.Point(13, 106);
+            this.lblTelefono.Location = new System.Drawing.Point(23, 143);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(61, 17);
             this.lblTelefono.TabIndex = 5;
@@ -93,7 +95,7 @@
             // txtBoxTelefono
             // 
             this.txtBoxTelefono.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxTelefono.Location = new System.Drawing.Point(80, 104);
+            this.txtBoxTelefono.Location = new System.Drawing.Point(90, 141);
             this.txtBoxTelefono.Name = "txtBoxTelefono";
             this.txtBoxTelefono.Size = new System.Drawing.Size(151, 23);
             this.txtBoxTelefono.TabIndex = 4;
@@ -102,7 +104,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(13, 148);
+            this.lblEmail.Location = new System.Drawing.Point(23, 185);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(42, 17);
             this.lblEmail.TabIndex = 7;
@@ -111,7 +113,7 @@
             // txtBoxEmail
             // 
             this.txtBoxEmail.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxEmail.Location = new System.Drawing.Point(61, 146);
+            this.txtBoxEmail.Location = new System.Drawing.Point(71, 183);
             this.txtBoxEmail.Name = "txtBoxEmail";
             this.txtBoxEmail.Size = new System.Drawing.Size(170, 23);
             this.txtBoxEmail.TabIndex = 6;
@@ -128,7 +130,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewPropiedades.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewPropiedades.Location = new System.Drawing.Point(261, 12);
+            this.dataGridViewPropiedades.Location = new System.Drawing.Point(324, 49);
             this.dataGridViewPropiedades.Name = "dataGridViewPropiedades";
             this.dataGridViewPropiedades.Size = new System.Drawing.Size(562, 157);
             this.dataGridViewPropiedades.TabIndex = 8;
@@ -136,7 +138,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Font = new System.Drawing.Font("Segoe UI Variable Small Semibol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(762, 175);
+            this.btnSiguiente.Location = new System.Drawing.Point(517, 226);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(59, 27);
             this.btnSiguiente.TabIndex = 9;
@@ -147,7 +149,7 @@
             // btnAnterior
             // 
             this.btnAnterior.Font = new System.Drawing.Font("Segoe UI Variable Small Semibol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnterior.Location = new System.Drawing.Point(569, 175);
+            this.btnAnterior.Location = new System.Drawing.Point(324, 226);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(59, 27);
             this.btnAnterior.TabIndex = 10;
@@ -158,7 +160,7 @@
             // btnAplicarCambios
             // 
             this.btnAplicarCambios.Font = new System.Drawing.Font("Segoe UI Variable Small Semibol", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAplicarCambios.Location = new System.Drawing.Point(634, 175);
+            this.btnAplicarCambios.Location = new System.Drawing.Point(389, 226);
             this.btnAplicarCambios.Name = "btnAplicarCambios";
             this.btnAplicarCambios.Size = new System.Drawing.Size(122, 27);
             this.btnAplicarCambios.TabIndex = 11;
@@ -166,11 +168,33 @@
             this.btnAplicarCambios.UseVisualStyleBackColor = true;
             this.btnAplicarCambios.Click += new System.EventHandler(this.btnAplicarCambios_Click);
             // 
+            // lblTituloCliente
+            // 
+            this.lblTituloCliente.AutoSize = true;
+            this.lblTituloCliente.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloCliente.Location = new System.Drawing.Point(12, 9);
+            this.lblTituloCliente.Name = "lblTituloCliente";
+            this.lblTituloCliente.Size = new System.Drawing.Size(237, 28);
+            this.lblTituloCliente.TabIndex = 12;
+            this.lblTituloCliente.Text = "Información del Cliente:";
+            // 
+            // lblTituloPropiedades
+            // 
+            this.lblTituloPropiedades.AutoSize = true;
+            this.lblTituloPropiedades.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloPropiedades.Location = new System.Drawing.Point(319, 9);
+            this.lblTituloPropiedades.Name = "lblTituloPropiedades";
+            this.lblTituloPropiedades.Size = new System.Drawing.Size(242, 28);
+            this.lblTituloPropiedades.TabIndex = 13;
+            this.lblTituloPropiedades.Text = "Propiedades del Cliente:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 236);
+            this.ClientSize = new System.Drawing.Size(902, 285);
+            this.Controls.Add(this.lblTituloPropiedades);
+            this.Controls.Add(this.lblTituloCliente);
             this.Controls.Add(this.btnAplicarCambios);
             this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnSiguiente);
@@ -184,7 +208,7 @@
             this.Controls.Add(this.lblDni);
             this.Controls.Add(this.txtBoxDni);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Gestión De Clientes";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPropiedades)).EndInit();
             this.ResumeLayout(false);
@@ -206,6 +230,8 @@
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnAplicarCambios;
+        private System.Windows.Forms.Label lblTituloCliente;
+        private System.Windows.Forms.Label lblTituloPropiedades;
     }
 }
 

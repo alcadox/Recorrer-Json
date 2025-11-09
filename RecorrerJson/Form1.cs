@@ -85,14 +85,25 @@ namespace RecorrerJson
             {
                 if (fila.IsNewRow) continue; // saltamos la fila nueva de DataGridView
 
-                var valorCelda = fila.Cells["Cuota"].Value; // nombre de la columna "Cuota"
-                if (valorCelda != null)
+                foreach (DataGridViewCell celda in fila.Cells)
                 {
-                    // Intentamos convertir a double
-                    if (!double.TryParse(valorCelda.ToString(), out _))
+
+                    // Validamos que ninguna celda esté vacía
+                    if (celda.Value == null || string.IsNullOrWhiteSpace(celda.Value.ToString()))
                     {
-                        MessageBox.Show("La cuota debe ser un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("No se pueden dejar campos vacíos en las propiedades.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return; // salimos del método si hay error
+                    }
+
+                    // Validamos que la columna "Cuota" contenga un número válido
+                    if (celda.ColumnIndex == dataGridViewPropiedades.Columns["Cuota"].Index)
+                    {
+                        // Intentamos convertir a decimal
+                        if (!decimal.TryParse(celda.Value.ToString(), out _))
+                        {
+                            MessageBox.Show("La cuota debe ser un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return; // salimos del método si hay error
+                        }
                     }
                 }
             }
